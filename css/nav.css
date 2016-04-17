@@ -1,0 +1,21 @@
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent
+}
+@media (min-width: 768px) {
+    .navbar-right {
+        float: right!important;
+        margin-right: 25%;
+    }
+}
+@media (min-width: 768px) {
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 19%;
+    }
+}
