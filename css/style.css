@@ -8,21 +8,81 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+/*div class with full widtgh img */
+.wide { 
+    width:100%;
+    height:300px;
+    overflow:hidden;
+    position: relative;
+
+ }
+
+/* image exact positioning */
+ .wide img {
+
+  position:absolute;
+  top: -20px;
+  left: -20px;
+ }
+
+
 @media (min-width: 900px) {
   .container {
     width: 1024px;
   }
+   
 }
+
 @media (min-width: 1024px) {
   .container {
     width: 1140px;
   }
+
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
+
 }
+/* Maxium width of 959pixels show */
+@media screen and (max-width:959px){
+
+  .wide { 
+ 
+    height:200px;
+  }
+}
+/* Maxium width of 640pixels shows */
+@media screen and (max-width:640px){
+
+  .wide { 
+ 
+    height:150px;
+  }
+
+  .wide img {
+
+    position:absolute;
+    top: -10px;
+    left: -20px;
+   }
+}
+
+/* Maxium width of 640pixels shows */
+@media screen and (max-width:320px){
+
+  .wide { 
+    width: 0%;
+    height: 0px;
+    overflow:hidden;
+    position: relative;
+  }
+
+}
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -30,23 +90,25 @@
   margin-left: auto;
 }
 
+/*div to full height of screen browser use 'vh'*/
 .panel1 {
-	height: 50%;
-	width: 60%;
+	height: 100vh;
+	
+  width: 60%;
 	margin: 0 auto;
-	background-color: #000;
+	
 }
+
 
 .panel2 {
-	height: 50%;
+	height: 100vh;
 	width: 60%;
-	margin: 0 auto;
-	background-color: #000;
+	margin:0 auto;
+	
 }
-
 .panel3 {
-	height: 50%;
-	width: 60%;
-	margin: 0 auto;
-	background-color: #000;
+  height: 50%;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #000;
 }
