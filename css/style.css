@@ -90,13 +90,15 @@
   margin-left: auto;
 }
 
+.panel-container {
+  width: 100% !important;
+}
+
 /*div to full height of screen browser use 'vh'*/
 .panel1 {
 	height: 100vh;
-	
   width: 60%;
 	margin: 0 auto;
-	
 }
 
 
