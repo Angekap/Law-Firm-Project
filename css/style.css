@@ -117,20 +117,20 @@ p {
 
 /*div to full height of screen browser use 'vh'*/
 .panel1 {
-	height: 100vh;
+	height: 50vh;
   width: 60%;
 	margin: 0 auto;
 }
 
 
 .panel2 {
-	height: 100vh;
+	height: 50vh;
 	width: 60%;
 	margin:0 auto;
 	
 }
 .panel3 {
-  height: 100vh;
+  height: 50vh;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 40px;
