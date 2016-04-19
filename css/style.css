@@ -24,6 +24,15 @@
   top: -20px;
  }
 
+ .navbar-bg {
+
+  background-image: url("../images/navbar_bg.png");
+ }
+  /*Makes sure the wide image doesn't get covered by the navbar*/
+ .space{
+  padding-top:10px;
+ }
+
 @media (min-width: 900px) {
   .container {
     width: 1024px;
@@ -47,6 +56,10 @@
   .wide { 
     height:200px;
   }
+   /*Makes sure the wide image doesn't get covered by the navbar*/
+  .space{
+  padding-top: 40px;
+ }
 }
 
 /* Maxium width of 640pixels shows */
@@ -60,10 +73,20 @@
     position:absolute;
     top: -10px;
    }
+
+  /*Makes sure the wide image doesn't get covered by the navbar*/
+  .space{
+  padding-top:50px;
+ }
 }
 
-/* Maxium width of 640pixels shows */
+/* Maxium width of 320pixels shows */
 @media screen and (max-width:320px){
+
+  .container {
+    width: 320px !important;
+    
+  }
 
   .wide { 
     width: 0%;
@@ -72,6 +95,9 @@
     position: relative;
   }
 
+  .navbar-brand {
+    width: 320px;
+  }
 }
 
 .container-fluid {

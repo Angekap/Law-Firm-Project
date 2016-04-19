@@ -7,13 +7,17 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/nav.css">
 		<link rel="stylesheet" type="text/css" href="css/img.css">
+		
+		<!--Jquery, scrollTo Scripts-->
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
 		<div class="container">
 
-			<nav class="navbar navbar-fixed-top">
+			<nav class="navbar navbar-fixed-top  navbar-bg">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
@@ -30,13 +34,13 @@
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav navbar-right">
 			        <li>
-			        	<a href="#panel1">Home</a>
+			        	<a id="Home">Home</a>
 			        </li>
 					<li>
-			        	<a href="#panel2">Our Services</a>
+			        	<a id="Services">Our Services</a>
 			        </li>
 					<li>
-			        	<a href="#panel3">Contact Us</a>
+			        	<a id="Contact">Contact Us</a>
 			        </li>
 			        <!-- <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -52,9 +56,9 @@
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
-
-			<div class="panel-container" id="panel1">
-				<div class="wide" name="home">
+			<br></br>
+			<div class="panel-container space" id="panel1">
+				<div class="wide">
 					<img src="images/building5.jpg" class="img-responsive" alt="Block of houses image">
 				</div>
 				<div class="panel1">
@@ -62,11 +66,16 @@
 					<p>Ibex Property Legal is a law firm that specialises in all aspects of property law; especially Residential & Commercial Property Conveyancing transactions. We offer efficient, practical and professional legal services to sellers, buyers and landlords. Our professional yet considerate lawyers provide clients with a dedicated, specialist and high quality service.</p>
 				</div>
 			</div>
+			
 
-			<div class="panel-container" id="panel2">
-				<div class="wide" name="services">
+			<br></br>
+
+			<div class="panel-container space" id="panel2">
+				<div class="wide">
 					<img src="images/building2.jpg" class="img-responsive" alt="Single house image">
 				</div>
+				<br></br>
+
 				<div class="panel2">
 					<h2>Our Services. </h2>
 					<p>If you are buying, selling or renting your commercial or residential property, we are here to help you.  If you want the deal done quickly, and want it done 	right, this is where our experience and skill will need to come together.
@@ -75,6 +84,7 @@
 				</div>
 			</div>
 
+			<br></br>
 			<div class="panel3" id="panel3">
 				<h2>This is panel 3 </h2>
 			</div>
@@ -91,3 +101,33 @@
 	</body>
 
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		//Scroll to Home page
+		$(function () { 
+    		$("#Home").click(function () { 
+       	 		$("body").scrollTo($("#panel1"), 1200); 
+    		}); 
+		}); 
+
+		//Scroll to Our Services page
+		$(function () { 
+    		$("#Services").click(function () { 
+       	 		$("body").scrollTo($("#panel2"), 1200); 
+    		}); 
+		});
+
+		//Scroll to Contact Us page
+		$(function () { 
+    		$("#Contact").click(function () { 
+       	 		$("body").scrollTo($("#panel3"), 1200); 
+    		}); 
+		}); 
+
+
+
+	});
+
+</script>
