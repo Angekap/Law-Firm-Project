@@ -1,5 +1,13 @@
 /* css */
 
+body {
+
+}
+
+p {
+  font-size: 18px;
+}
+
 .container {
 	width: 100% !important;
 	height: 100%;
@@ -30,7 +38,7 @@
  }
   /*Makes sure the wide image doesn't get covered by the navbar*/
  .space{
-  padding-top:10px;
+  padding-top: 50px;
  }
 
 @media (min-width: 900px) {
@@ -73,11 +81,6 @@
     position:absolute;
     top: -10px;
    }
-
-  /*Makes sure the wide image doesn't get covered by the navbar*/
-  .space{
-  padding-top:50px;
- }
 }
 
 /* Maxium width of 320pixels shows */
@@ -126,9 +129,33 @@
 	
 }
 .panel3 {
-  height: 50%;
+  height: 100vh;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 40px;
-  background-color: #000;
+  background-image: linear-gradient(#abdcfb, #e7f5fe);
+  background-repeat: no-repeat;
+}
+
+#querybox {
+  /*border: 1px solid #000;*/
+  border-raduis: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+  background: rgba(200, 200, 200, 0.1);
+  top: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+#addressbox {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+  background: rgba(200, 200, 200, 0.1);
+  top: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #000;
 }

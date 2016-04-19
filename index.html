@@ -7,26 +7,17 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/nav.css">
 		<link rel="stylesheet" type="text/css" href="css/img.css">
-		
-		<!--Jquery, scrollTo Scripts-->
-		<script src="js/jquery-1.12.3.min.js"></script>
-		<script src="js/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
 		<div class="container">
 
-			<nav class="navbar navbar-fixed-top  navbar-bg">
+			<nav class="navbar navbar-fixed-top navbar-bg">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
 			      <a class="navbar-brand" href="#">Ibex Property Legal</a>
 			    </div>
 
@@ -56,7 +47,9 @@
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
-			<br></br>
+			
+			<div class="space"></div>
+
 			<div class="panel-container space" id="panel1">
 				<div class="wide">
 					<img src="images/building5.jpg" class="img-responsive" alt="Block of houses image">
@@ -67,8 +60,9 @@
 				</div>
 			</div>
 			
+			<br>
 
-			<br></br>
+			<div class="space"></div>
 
 			<div class="panel-container space" id="panel2">
 				<div class="wide">
@@ -84,50 +78,99 @@
 				</div>
 			</div>
 
-			<br></br>
-			<div class="panel3" id="panel3">
-				<h2>This is panel 3 </h2>
+			<br>
+
+			<div class="space"></div>
+
+			<div class="panel-container space" id="panel3">
+				<div class="panel3">
+					<div class="container-fluid">
+					  <div class="row">
+					    <div class="col-sm-12">
+					      <div class="row-fluid" id="">
+					        <div class="col-xs-4 col-sm-6" id="addressbox">
+					          <h2> Address </h2>
+					          <hr>
+					          <div class="contact">
+					            
+					          </div>
+					          
+					        </div>
+					        <div class="col-xs-8 col-sm-6" id="querybox">
+					          <h2> Queries </h2>
+					          <hr>
+					          <form class="form-horizontal" action="" method="" id="contact_form">
+					            <fieldset>
+					              <!-- Form Name -->
+					              <!-- Text input -->
+					              <div class="form-group">
+					                <div class="col-md-12">
+					                  <div class="input-group">
+					                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					                    <input name="name" placeholder="Name" class="form-control" type="text">
+					                  </div>
+					                </div>
+					              </div>
+
+					              <!-- Email -->
+					              <!-- Text input -->
+					              <div class="form-group">
+					                <div class="col-md-12">
+					                  <div class="input-group">
+					                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+					                    <input name="email" placeholder="Email Address" class="form-control" type="text">
+					                  </div>
+					                </div>
+					              </div>
+
+					              <!-- Phone -->
+					              <!-- Text input -->
+					              <div class="form-group">
+					                <div class="col-md-12">
+					                  <div class="input-group">
+					                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+					                    <input name="phone" placeholder="+44 xxx xxx xxxx" class="form-control" type="text">
+					                  </div>
+					                </div>
+					              </div>
+
+					              <!-- Message -->
+					              <!-- Text input -->
+					              <div class="form-group">
+					                <div class="col-md-12 inputGroupContainer">
+					                  <div class="input-group">
+					                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+					                    <textarea class="form-control" name="comment" placeholder="Message"></textarea>
+					                  </div>
+					                </div>
+					              </div>
+					              
+					              <!-- Submit button -->
+					              <div class="form-group">
+					                <div class="col-md-12">
+					                  <button type="submit" class="btn btn-warning pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+					                </div>
+					              </div>
+
+					            </fieldset>
+					          </form>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
 			</div>
 
 			<nav class="navbar navbar-default navbar-fixed-bottom">
-			  <div class="container">
-			    
+			    <div class="container">
 			  </div>
 			</nav>
-
 		</div>
 
-		
+		<!--Jquery, scrollTo Scripts-->
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
+		<script src="js/myscroll.js"></script>
 	</body>
-
 </html>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		
-		//Scroll to Home page
-		$(function () { 
-    		$("#Home").click(function () { 
-       	 		$("body").scrollTo($("#panel1"), 1200); 
-    		}); 
-		}); 
-
-		//Scroll to Our Services page
-		$(function () { 
-    		$("#Services").click(function () { 
-       	 		$("body").scrollTo($("#panel2"), 1200); 
-    		}); 
-		});
-
-		//Scroll to Contact Us page
-		$(function () { 
-    		$("#Contact").click(function () { 
-       	 		$("body").scrollTo($("#panel3"), 1200); 
-    		}); 
-		}); 
-
-
-
-	});
-
-</script>

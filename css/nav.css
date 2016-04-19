@@ -37,7 +37,7 @@
 }
 .navbar-fixed-top {
     top: 0;
-    /*background-color: #fff;*/
+    background-color: #fff;
     border-width: 0 0 1px
 }
 .navbar-fixed-bottom {
