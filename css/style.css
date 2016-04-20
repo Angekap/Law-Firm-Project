@@ -1,0 +1,162 @@
+/* css */
+
+body {
+
+}
+
+p {
+  font-size: 18px;
+}
+
+.container {
+	width: 100% !important;
+	height: 100%;
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+  margin-right: auto;
+  margin-left: auto;
+  background: rgba(200, 200, 200, 0.1);
+}
+
+/*div class with full widtgh img */
+.wide { 
+    margin:0;
+    width:100%;
+    height:300px;
+    overflow:hidden;
+    position: relative;
+ }
+
+/* image exact positioning */
+ .wide img {
+  position:absolute;
+  top: -20px;
+ }
+
+ .navbar-bg {
+
+  background-image: url("../images/navbar_bg.png");
+ }
+  /*Makes sure the wide image doesn't get covered by the navbar*/
+ .space{
+  padding-top: 50px;
+ }
+
+@media (min-width: 900px) {
+  .container {
+    width: 1024px;
+  }  
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Maxium width of 959pixels show */
+@media screen and (max-width:959px){
+
+  .wide { 
+    height:200px;
+  }
+   /*Makes sure the wide image doesn't get covered by the navbar*/
+  .space{
+  padding-top: 40px;
+ }
+}
+
+/* Maxium width of 640pixels shows */
+@media screen and (max-width:640px){
+
+  .wide { 
+    height:150px;
+  }
+
+  .wide img {
+    position:absolute;
+    top: -10px;
+   }
+}
+
+/* Maxium width of 320pixels shows */
+@media screen and (max-width:320px){
+
+  .container {
+    width: 320px !important;
+    
+  }
+
+  .wide { 
+    width: 0%;
+    height: 0px;
+    overflow:hidden;
+    position: relative;
+  }
+
+  .navbar-brand {
+    width: 320px;
+  }
+}
+
+.container-fluid {
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.panel-container {
+  width: 100% !important;
+}
+
+/*div to full height of screen browser use 'vh'*/
+.panel1 {
+	height: 50vh;
+  width: 60%;
+	margin: 0 auto;
+}
+
+
+.panel2 {
+	height: 50vh;
+	width: 60%;
+	margin:0 auto;
+	
+}
+.panel3 {
+  height: 50vh;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-image: linear-gradient(#abdcfb, #e7f5fe);
+  background-repeat: no-repeat;
+}
+
+#querybox {
+  /*border: 1px solid #000;*/
+  border-raduis: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+  background: rgba(200, 200, 200, 0.1);
+  top: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+#addressbox {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+  background: rgba(200, 200, 200, 0.1);
+  top: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #000;
+}
