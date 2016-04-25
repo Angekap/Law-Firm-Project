@@ -2,13 +2,24 @@
 
 <html>
 	<head>
-		<title> Law project </title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/nav.css">
-		<link rel="stylesheet" type="text/css" href="css/img.css">
+		<style type="text/css" href="css/bootstrap.min.css" rel="stylesheet"></style>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Ibex Property Legal </title>
+
+		<!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	    <!-- Custom styles for my site -->
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <!-- Custom image style for my site -->
+	    <!-- <link rel="stylesheet" type="text/css" href="css/img.css"> -->
+	    <!-- Custom nav style for my site -->
+	    <link rel="stylesheet" type="text/css" href="css/nav.css">
+
 	</head>
 
 	<body>
@@ -18,12 +29,12 @@
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
-			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".view-navbar-collapse">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
-			        </button>
+			      </button>
 			        <a class="navbar-brand" href="#" id="brand">Ibex Property Legal</a>
 			    </div>
 
@@ -115,7 +126,7 @@
 					<img src="images/building5.jpg" class="img-responsive" alt="Block of houses image">
 				</div>
 				<div class="panel1">
-					<h2 class="text-center">Welcome to Ibex Property Law</h2>
+					<h1 class="text-center"> Welcome to Ibex Property Law </h1>
 					<p>Ibex Property Legal is a law firm that specialises in all aspects of property law; especially Residential & Commercial Property Conveyancing transactions. We offer efficient, practical and professional legal services to sellers, buyers and landlords. Our professional yet considerate lawyers provide clients with a dedicated, specialist and high quality service.</p>
 				</div>
 			</div>
@@ -131,7 +142,7 @@
 				<br></br>
 
 				<div class="panel2">
-					<h2>Our Services. </h2>
+					<h1>Our Services. </h1>
 					<p>If you are buying, selling or renting your commercial or residential property, we are here to help you.  If you want the deal done quickly, and want it done 	right, this is where our experience and skill will need to come together.
 						Not only that, you need to know what is going on.  We’ll keep you informed from beginning to end as well as giving you solid, prompt advice based on deep experience and expertise.  We provide legal services on a nationwide basis and are happy to advise clients by post, phone or by email.
 					</p>
@@ -149,7 +160,7 @@
 					    <div class="col-sm-12">
 					      <div class="row-fluid" id="">
 					        <div class="col-xs-4 col-sm-6" id="addressbox">
-					          <h2> Address </h2>
+					          <h1> Contact Us </h1>
 					          <hr>
 					          <div class="contact">
 					            
@@ -157,9 +168,9 @@
 					          
 					        </div>
 					        <div class="col-xs-8 col-sm-6" id="querybox">
-					          <h2> Queries </h2>
+					          <h1> Queries </h1>
 					          <hr>
-					          <form class="form-horizontal" action="" method="" id="contact_form">
+					          <form class="form-horizontal" action="" method="" id="contact_form" role="form">
 					            <fieldset>
 					              <!-- Form Name -->
 					              <!-- Text input -->
@@ -178,18 +189,19 @@
 					                <div class="col-md-12">
 					                  <div class="input-group">
 					                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-					                    <input name="email" placeholder="Email Address" class="form-control" type="text">
+					                    <input name="email" placeholder="Email Address" class="form-control" id="email" type="email">
 					                  </div>
+					                  <span class="help-block" id="valid-email"> Please enter a valid E-mail address.</span>
 					                </div>
 					              </div>
 
-					              <!-- Phone -->
+					              <!-- Subject -->
 					              <!-- Text input -->
 					              <div class="form-group">
 					                <div class="col-md-12">
 					                  <div class="input-group">
-					                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-					                    <input name="phone" placeholder="+44 xxx xxx xxxx" class="form-control" type="text">
+					                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					                    <input name="name" placeholder="Subject" class="form-control" type="text">
 					                  </div>
 					                </div>
 					              </div>
@@ -221,12 +233,13 @@
 					</div>
 				</div>
 			</div>
-
-			<nav class="navbar navbar-default navbar-fixed-bottom">
-			    <div class="container">
-			  </div>
-			</nav>
 		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted"> Ibex Property Legal &copy; 2016 </p>
+			</div>
+		</footer>
 
 		<!--Jquery, scrollTo Scripts-->
 		<script src="js/jquery-1.12.3.min.js"></script>
